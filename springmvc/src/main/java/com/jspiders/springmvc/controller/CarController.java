@@ -28,7 +28,7 @@ public class CarController {
 	public String getAddPage(HttpSession httpSession) {
 		UserDTO signedInUser = (UserDTO) httpSession.getAttribute("user");
 		if (signedInUser != null) {
-			return "add_car"; // jsp file name to be executed
+			return "add_car"; 
 		} else {
 			return "sign_in";
 		}
@@ -43,7 +43,7 @@ public class CarController {
 			CarDTO addedCar = carService.addCar(name, brand, fuel, price);
 			userService.updateUser(signedInUser, addedCar);
 			modelMap.addAttribute("message", "Car details added.");
-			return "add_car"; // jsp file name to be executed
+			return "add_car"; 
 		} else {
 			return "sign_in";
 		}
