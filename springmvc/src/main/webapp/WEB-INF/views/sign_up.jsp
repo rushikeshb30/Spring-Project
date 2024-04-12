@@ -81,7 +81,7 @@ input[type="submit"] {
 				<ul>
 					<li><a href="home">HOME</a></li>
 					<li><a href="#">CONTACT</a></li>
-					<li><a href="#">ABOUT</a></li>
+					<li><a href="aboutus">ABOUT</a></li>
 				</ul>
 			</nav>
 		</div>
